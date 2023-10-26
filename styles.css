@@ -248,9 +248,45 @@
 }
 
 /* CUSTOM CSS */
-
 .internship-logo {
   height: 2em;
   width: 2em;
   border-radius: 50%;
+}
+
+.header {
+  height: 91.1vh;
+}
+
+/* TYPEWRITER CSS */
+.typing-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: monospace;
+}
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.input-cursor {
+  animation: blink 0.6s linear infinite alternate;
 }

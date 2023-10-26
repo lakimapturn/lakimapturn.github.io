@@ -59,12 +59,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#scrollspyHeading1"
-                  >Work Experience</a
-                >
+                <a class="nav-link" href="#workExperience">Work Experience</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Projects</a>
@@ -85,8 +83,6 @@
       </div>
     </nav>
 
-    <h1 id="root"></h1>
-
     <section></section>
     <div
       data-bs-spy="scroll"
@@ -94,8 +90,51 @@
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
     >
+      <section class="container-fluid header bg-dark text-white">
+        <div class="row">
+          <div class="col"></div>
+
+          <div class="col m-auto">
+            <h1 class="display-1 fw-bold">Hi,</h1>
+            <h1 class="display-3 fw-bold">I am Laksh Makhija</h1>
+            <div class="typing-container">
+              <span id="feature-text"></span>
+              <span class="input-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
+      <h1 id="about">About</h1>
+      <div class="card mb-3 mx-auto" style="max-width: 80%">
+        <div class="row g-0">
+          <div class="col-lg-3">
+            <img
+              src="/images/avatar.png"
+              class="img-fluid rounded-start"
+              alt="avatar"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <section>
-        <h1 id="scrollspyHeading1">Internships</h1>
+        <h1 id="workExperience">Work Experience</h1>
         <div class="container-fluid">
           <div class="timeline" id="internships"></div>
         </div>
@@ -157,7 +196,7 @@
                 <p className="m-0">{internship.position}</p>
               </div>
               <br />
-              <ul>
+              <ul className="text-start">
                 {internship.description.map((line) => (
                   <li key={line}>{line}</li>
                 ))}

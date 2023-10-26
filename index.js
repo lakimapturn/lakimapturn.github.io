@@ -27,7 +27,12 @@ const internships = [
     location: "Dubai, UAE",
     timespan: "June 2023 - July 2023",
     logo: "/images/emqube.jpeg",
-    description: [],
+    description: [
+      "Tested EmQube's in-development Facility Management Software called CAFM Pro.",
+      "Suggested fixes for issues found.",
+      "Developed a cross-platform mobile application using React Native. Integrated EmQube's backend and allowed users to create tickets for issues through the application.",
+      "Documented the UI for the CAFM Pro application"
+    ],
     skills: [
       skills.react_native,
       skills.angular,
@@ -62,7 +67,10 @@ const internships = [
     location: "Dubai, UAE",
     timespan: "July 2020 - July 2020",
     logo: "/images/galaxkey.webp",
-    description: [],
+    description: [
+      "Learnt about Software Security.",
+      "Selected as team leader to find breaches in data protection within my high school context."
+    ],
     skills: [],
   },
 ];
@@ -99,7 +107,7 @@ const projects = [
     name: "CAFM Mobile",
     type: "Mobile Application",
     description: [],
-    skills: [skills.react_native, skills.javascript, skills.angular],
+    skills: [skills.react_native, skills.javascript],
   },
   {
     name: "Tournament Tracker",
@@ -148,3 +156,54 @@ const projects = [
     skills: [skills.lua, skills.love2d],
   },
 ];
+
+// Typewriter code
+const carouselText = [
+  "Software Developer",
+  "Innovator",
+]
+
+document.addEventListener("DOMContentLoaded", () => {
+  const func = async () => {
+    carousel(carouselText, "#feature-text")
+  }
+  func();
+})
+
+async function typeSentence(sentence, eleRef, delay = 100) {
+  const letters = sentence.split("");
+  let i = 0;
+  while (i < letters.length) {
+    await waitForMs(delay);
+    document.querySelector(eleRef).append(letters[i]);
+    i++
+  }
+  return;
+}
+
+async function deleteSentence(eleRef) {
+  const sentence = document.querySelector(eleRef).innerHTML;
+  const letters = sentence.split("");
+  let i = 0;
+  while (letters.length > 0) {
+    await waitForMs(100);
+    letters.pop();
+    document.querySelector(eleRef).innerHTML = letters.join("");
+  }
+}
+
+async function carousel(carouselList, eleRef) {
+  var i = 0;
+  while (true) {
+    await typeSentence(carouselList[i], eleRef);
+    await waitForMs(1500);
+    await deleteSentence(eleRef);
+    await waitForMs(500);
+    i++
+    if (i >= carouselList.length) { i = 0; }
+  }
+}
+
+function waitForMs(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
