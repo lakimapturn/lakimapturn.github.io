@@ -253,9 +253,21 @@
   height: 60vh;
 }
 
+.project-item {
+  max-width: 45%;
+}
+
 @media (max-width: 1100px) {
   .avatar {
     margin: auto !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-item {
+    margin: auto;
+    width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -265,6 +277,10 @@
   }
   .header-text {
     margin: auto 2em auto auto !important;
+  }
+  .inner-navbar {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

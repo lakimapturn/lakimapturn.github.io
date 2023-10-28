@@ -86,12 +86,30 @@ const projects = [
       "Rewards users with points based on the amount of trash picked up (this is checked by our machine learning model that analyzes trash in images and decides how dangerous it is to the environment)",
       "Added a community feature to share routes and organise community events",
     ],
+    url: "https://www.youtube.com/embed/Pcv44IMOBo8",
     skills: [
       skills.ml,
       skills.flutter,
       skills.python,
       skills.django,
       skills.rest_api,
+    ],
+  },
+  {
+    name: "Safety Ambassador Program",
+    type: "Web Application",
+    short_desc:
+      "Safeguarding Juniors by Spreading Awareness on Staying Safe On The Internet Post-Covid",
+    long_desc: [
+      "<strong>Inspiration: </strong>During Covid, the entire world began relying on the internet for daily activities. This audience included young children who don't know any better. This website aimed at educating them and helping them stay safe online.",
+      "Used games and modules to educate students on various topics such as Digital Safety, Digital Identity, Dealing With Inappropriate Content Online, etc.",
+      "Taylored content for students of different ages.",
+    ],
+    skills: [
+      skills.python,
+      skills.django,
+      skills.html,
+      skills.css,
     ],
   },
   {
@@ -118,8 +136,8 @@ const projects = [
   {
     name: "CAFM Mobile",
     type: "Mobile Application",
-    short_desc: "",
-    long_desc: [],
+    short_desc: " ",
+    long_desc: [""],
     skills: [skills.react_native, skills.javascript],
   },
   {
