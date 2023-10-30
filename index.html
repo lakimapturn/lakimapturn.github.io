@@ -72,9 +72,9 @@
                 src="/images/transparent-avatar.png"
               />
             </div>
-            <div class="col-4 header-text me-auto my-auto">
-              <h1 class="display-1 fw-bold">Hi,</h1>
-              <h1 class="display-3 fw-bold">I am Laksh Makhija</h1>
+            <div class="col-4 header-text-container me-auto my-auto">
+              <h1 class="display-1 fw-bold header-text">Hi,</h1>
+              <h1 class="display-3 fw-bold header-text">I am Laksh Makhija</h1>
               <div class="typing-container">
                 <span id="feature-text"></span>
                 <span class="input-cursor"></span>
@@ -126,11 +126,11 @@
         return internships.map((internship) => (
           <div
             key={Math.random().toString()}
-            className="timeline-row text-white"
+            className="timeline-row text-dark"
           >
             <div className="timeline-time">{internship.timespan}</div>
             <div
-              className="timeline-content bg-secondary"
+              className="timeline-content bg-white"
               style={{ "--bs-text-opacity": ".5;" }}
             >
               <img
@@ -190,7 +190,7 @@
               </div>
               <div className="card-footer">
                 {project.skills.map((skill) => (
-                  <span class="badge rounded-pill m-1 text-bg-light">
+                  <span class="badge rounded-pill m-1 text-bg-dark text-white">
                     {skill}
                   </span>
                 ))}
