@@ -73,7 +73,7 @@
               />
             </div>
             <div class="col-4 header-text-container me-auto my-auto">
-              <h1 class="display-1 fw-bold header-text">Hi,</h1>
+              <h1 class="display-1 fw-bold header-text mb-0">Hi,</h1>
               <h1 class="display-3 fw-bold header-text">I am Laksh Makhija</h1>
               <div class="typing-container">
                 <span id="feature-text"></span>
@@ -82,28 +82,31 @@
             </div>
           </div>
         </section>
-        <section class="pt-2 px-2">
-          <h1 id="about">About Me</h1>
+        <section id="about" class="pt-2 px-2">
+          <h1>About Me</h1>
           <p class="card-text">
             I am a Georgia Tech Computer Science major who loves developing
             software and building innovative solutions to real world problems.
             My coding journey started when I first learnt Visual Basic in 2018.
             Now, I have learnt over 5 programming languages and several more
             frameworks but am evermore eager to expand my knowledge within the
-            vast field of Computer Science.
+            vast field of Computer Science. Beyond learning, I also enjoy
+            teaching as I was involved in several tutoring clubs in high school
+            and hosted my own Programming with Python series on Schoolhouse
+            which had 19 students from 9 different countries.
           </p>
         </section>
       </section>
 
-      <section>
-        <h1 class="px-2" id="workExperience">Work Experience</h1>
+      <section id="workExperience">
+        <h1 class="px-2">Work Experience</h1>
         <div class="container-fluid bg-dark p-0">
           <div class="timeline" id="internships"></div>
         </div>
       </section>
 
-      <section>
-        <h1 class="px-2" id="projects">Projects</h1>
+      <section id="projects">
+        <h1 class="px-2">Projects</h1>
 
         <div
           id="projectList"
@@ -165,7 +168,6 @@
       };
 
       ReactDOM.render(<Timeline />, document.getElementById("internships"));
-      //   ReactDOM.render(<Timeline />, document.getElementById("root"));
     </script>
     <script type="text/babel">
       const Projects = (props) => {
