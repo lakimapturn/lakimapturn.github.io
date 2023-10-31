@@ -105,12 +105,7 @@ const projects = [
       "Used games and modules to educate students on various topics such as Digital Safety, Digital Identity, Dealing With Inappropriate Content Online, etc.",
       "Taylored content for students of different ages.",
     ],
-    skills: [
-      skills.python,
-      skills.django,
-      skills.html,
-      skills.css,
-    ],
+    skills: [skills.python, skills.django, skills.html, skills.css],
   },
   {
     name: "Paws",
@@ -208,6 +203,7 @@ const projects = [
     name: "Wrecking Ball",
     type: "Desktop Game",
     short_desc: "Recreation of An Old Original Game: Brick Breaker",
+    url: "https://www.youtube.com/embed/LMOVRYhkMiY",
     long_desc: [
       "Harnessed Lua and LOVE2D to recreate Brick Breaker after learning game development from Harvard's Introduction to Game Development",
     ],
