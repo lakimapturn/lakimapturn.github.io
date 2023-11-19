@@ -9,7 +9,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="mb-2">
@@ -174,14 +173,19 @@
         return projects.map((project) => (
           <div key={project.name} className="col my-1 project-item">
             <div data-bs-theme="dark" className="card">
-              <iframe
-                src={project.url}
-                title="HackGT X Submission Video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                className="card-img-top"
-              ></iframe>
+              {project.url && (
+                <iframe
+                  src={project.url}
+                  title="Demo Video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  className="card-img-top"
+                ></iframe>
+              )}
+              {project.image && (
+                <img src={project.image} className="card-img-top" />
+              )}
               <div className="card-body">
                 <h5 className="card-title">{project.name}</h5>
                 <h6 className="leading">{project.type}</h6>
