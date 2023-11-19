@@ -170,6 +170,7 @@ const projects = [
   {
     name: "Elite English School Communicator Application",
     type: "Mobile Application",
+    image: "/lakimapturn.github.io/images/ees.png",
     short_desc:
       "iOS Application To Strengthen Communication Between Parents and School Staff.",
     long_desc: [
@@ -182,6 +183,7 @@ const projects = [
   {
     name: "Community",
     type: "Mobile Application",
+    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
     short_desc:
       "A Community Management Application To Book Amenities and Generate Requests to Fix Issues",
     long_desc: [
@@ -201,6 +203,7 @@ const projects = [
   {
     name: "Railway Reservation",
     type: "Web Application",
+    url: "https://www.youtube.com/embed/RWWvPpodUHI",
     short_desc: "My Grade 11 Project",
     long_desc: [
       "<strong>Inspiration: </strong>My Computer Science teacher told me we had to improve our 10th grade projects by using only Java. She referred to using the Java GUI, but my curiosity to learn more about SpringBoot inspired me to go beyond.",
