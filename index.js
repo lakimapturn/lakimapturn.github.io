@@ -111,6 +111,7 @@ const projects = [
     name: "Paws",
     type: "Web Application",
     short_desc: "The All-In-One Solution To All Your Dog's Needs",
+    url: "https://www.youtube.com/embed/Eq7m1A2JB1o",
     long_desc: [
       "Allowed scheduling of important tasks with email remainders for things like vaccinations, checkups, etc.",
       "Harnessed google maps api to display the closest vetenary clinics and closest pet adoption center for users with no dogs",
@@ -172,6 +173,7 @@ const projects = [
   {
     name: "Community",
     type: "Mobile Application",
+    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
     short_desc:
       "A Community Management Application To Book Amenities and Generate Requests to Fix Issues",
     long_desc: [
@@ -192,6 +194,7 @@ const projects = [
     name: "Railway Reservation",
     type: "Web Application",
     short_desc: "My Grade 11 Project",
+    url: "https://www.youtube.com/embed/RWWvPpodUHI",
     long_desc: [
       "<strong>Inspiration: </strong>My Computer Science teacher told me we had to improve our 10th grade projects by using only Java. She referred to using the Java GUI, but my curiosity to learn more about SpringBoot inspired me to go beyond.",
       "Created a database using MySQL to store user information.",

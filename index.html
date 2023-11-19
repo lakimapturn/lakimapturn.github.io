@@ -46,9 +46,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Achievements</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -156,7 +156,7 @@
                 {internship.skills.map((skill) => (
                   <span
                     key={Math.random().toString()}
-                    className="badge rounded-pill mx-1 my-1"
+                    className="badge rounded-pill mx-1 my-1 bg-dark"
                   >
                     {skill}
                   </span>
@@ -192,7 +192,7 @@
               </div>
               <div className="card-footer">
                 {project.skills.map((skill) => (
-                  <span class="badge rounded-pill m-1 text-bg-dark text-white">
+                  <span class="badge rounded-pill m-1 text-bg-light text-dark">
                     {skill}
                   </span>
                 ))}
