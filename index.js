@@ -98,6 +98,8 @@ const projects = [
   {
     name: "Safety Ambassador Program",
     type: "Web Application",
+    website_url: "http://lakimapturn.pythonanywhere.com/",
+    image: "/lakimapturn.github.io/images/sap.JPG",
     short_desc:
       "Safeguarding Juniors by Spreading Awareness on Staying Safe On The Internet Post-Covid",
     long_desc: [
@@ -105,7 +107,13 @@ const projects = [
       "Used games and modules to educate students on various topics such as Digital Safety, Digital Identity, Dealing With Inappropriate Content Online, etc.",
       "Taylored content for students of different ages.",
     ],
-    skills: [skills.python, skills.django, skills.html, skills.css],
+    skills: [
+      skills.python,
+      skills.django,
+      skills.html,
+      skills.css,
+      skills.heroku,
+    ],
   },
   {
     name: "Paws",
@@ -129,17 +137,18 @@ const projects = [
       skills.heroku,
     ],
   },
-  {
-    name: "CAFM Mobile",
-    type: "Mobile Application",
-    short_desc: " ",
-    long_desc: [""],
-    skills: [skills.react_native, skills.javascript],
-  },
+  // {
+  //   name: "CAFM Mobile",
+  //   type: "Mobile Application",
+  //   short_desc: " ",
+  //   long_desc: [""],
+  //   skills: [skills.react_native, skills.javascript],
+  // },
   {
     name: "Tournament Tracker",
     type: "Web Application",
     short_desc: "Inter-School Tournament Tracker",
+    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
     long_desc: [
       "<strong>Inspiration: </strong>My highschool kept no record of previous years tournament winners and there was no way for participants to track their performance across tournaments to show universities.",
       "Integrated excel sheet processing so that coaches could enter an excel sheet with all participants and teams would be created automatically using given information.",
@@ -173,7 +182,6 @@ const projects = [
   {
     name: "Community",
     type: "Mobile Application",
-    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
     short_desc:
       "A Community Management Application To Book Amenities and Generate Requests to Fix Issues",
     long_desc: [
@@ -194,7 +202,6 @@ const projects = [
     name: "Railway Reservation",
     type: "Web Application",
     short_desc: "My Grade 11 Project",
-    url: "https://www.youtube.com/embed/RWWvPpodUHI",
     long_desc: [
       "<strong>Inspiration: </strong>My Computer Science teacher told me we had to improve our 10th grade projects by using only Java. She referred to using the Java GUI, but my curiosity to learn more about SpringBoot inspired me to go beyond.",
       "Created a database using MySQL to store user information.",
@@ -214,8 +221,35 @@ const projects = [
   },
 ];
 
+const achievements = [
+  {
+    name: "Winner of the Software Development Challenge in the DIAByte Hackathon 2021",
+    desc: "",
+  },
+  {
+    name: "Placed 4th in the Zenith “Hello, World” Hackathon 2021",
+    desc: "",
+  },
+];
+
+const leadership = [
+  {
+    name: "Co-lead at GT Web Dev Club",
+    desc: [
+      "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
+    ],
+  },
+  {
+    name: "Founded Exponential Technologies Club at High School",
+    desc: [
+      "Hosted workshops weekly to teach students about web development.",
+      "Organized hackathons and collaborative projects where passionate students could work together to solve a problem and learn.",
+    ],
+  },
+];
+
 // Typewriter code
-const carouselText = ["Software Developer", "Innovator"];
+const carouselText = ["Software Developer", "Innovator", "Tutor", "Learner"];
 
 document.addEventListener("DOMContentLoaded", () => {
   const func = async () => {
