@@ -99,7 +99,7 @@ const projects = [
     name: "Safety Ambassador Program",
     type: "Web Application",
     website_url: "http://lakimapturn.pythonanywhere.com/",
-    image: "/lakimapturn.github.io/images/sap.JPG",
+    image: "/images/sap.JPG",
     short_desc:
       "Safeguarding Juniors by Spreading Awareness on Staying Safe On The Internet Post-Covid",
     long_desc: [
@@ -170,7 +170,7 @@ const projects = [
   {
     name: "Elite English School Communicator Application",
     type: "Mobile Application",
-    image: "/lakimapturn.github.io/images/ees.png",
+    image: "/images/ees.png",
     short_desc:
       "iOS Application To Strengthen Communication Between Parents and School Staff.",
     long_desc: [
