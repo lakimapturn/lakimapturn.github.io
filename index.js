@@ -18,6 +18,7 @@ const skills = {
   ml: "Machine Learning",
   flutter: "Flutter",
   heroku: "Heroku",
+  redux: "React Redux",
 };
 
 const internships = [
@@ -39,6 +40,7 @@ const internships = [
       skills.html,
       skills.css,
       skills.javascript,
+      skills.redux
     ],
   },
   {
@@ -135,6 +137,7 @@ const projects = [
       skills.django,
       skills.python,
       skills.heroku,
+      skills.redux
     ],
   },
   // {
@@ -165,6 +168,7 @@ const projects = [
       skills.python,
       skills.rest_api,
       skills.heroku,
+      skills.redux
     ],
   },
   {
@@ -178,7 +182,10 @@ const projects = [
       "Displayed test scores and end of year report cards.",
       "Tracked student attendance.",
     ],
-    skills: [skills.react_native, skills.javascript, skills.php],
+    skills: [skills.react_native, skills.javascript, skills.php,
+    skills.redux
+
+    ],
   },
   {
     name: "Community",
@@ -198,6 +205,8 @@ const projects = [
       skills.rest_api,
       skills.javascript,
       skills.heroku,
+      skills.redux
+
     ],
   },
   {
