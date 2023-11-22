@@ -1,9 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 .timeline {
   position: relative;
   padding: 4rem;
   margin: 0 auto 1rem auto;
   overflow: hidden;
 }
+
 .timeline:after {
   content: "";
   position: absolute;
@@ -259,6 +264,15 @@
 
 .header-text {
   animation: enlarge-contraction 1s ease-in-out;
+}
+
+.visit-url {
+  transition: 0.25s all ease-in-out;
+  -webkit-transition: 0.25s all ease-in-out;
+}
+
+.visit-url:hover {
+  transform: translateX(0.2em);
 }
 
 @keyframes enlarge-contraction {
