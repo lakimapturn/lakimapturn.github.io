@@ -267,7 +267,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const func = async () => {
     carousel(carouselText, "#feature-text");
   };
-  func();
+
+  const introText = document.querySelectorAll(".intro-text");
+  const introContainer = document.getElementById("intro-container");
+
+  introText.forEach((element, idx) => {
+    setTimeout(() => {
+      element.classList.add("active");
+      if (element.tagName === "DIV") {
+        func();
+      }
+    }, (idx + 1) * 700)
+  });
+
+  setTimeout(() => {
+    introContainer.style.top = "-100vh"
+  }, 2300)
+
 });
 
 async function typeSentence(sentence, eleRef, delay = 100) {

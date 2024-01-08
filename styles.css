@@ -310,7 +310,7 @@ html {
   .avatar {
     margin: 0 auto 0 0 !important;
   }
-  .header-text-container {
+  .intro-text-container {
     margin: auto 2em auto auto !important;
   }
   .inner-navbar {
@@ -323,15 +323,36 @@ html {
   .avatar {
     display: none;
   }
-  .header-text-container {
+  .intro-text-container {
     margin: auto !important;
   }
+}
+
+/* INTRO CSS */
+#intro-container {
+  display: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  justify-content: center !important;
+  text-align: center !important;
+  transition: 1s;
+}
+
+.intro-text {
+  position: relative;
+  opacity: 0;
+}
+
+.intro-text.active {
+  opacity: 1;
+  transition: ease-in-out 0.5s;
 }
 
 /* TYPEWRITER CSS */
 .typing-container {
   display: flex;
-  justify-content: start;
   align-items: center;
   font-family: monospace;
 }
