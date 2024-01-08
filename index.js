@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const introText = document.querySelectorAll(".intro-text");
-  const introContainer = document.getElementById("intro-container");
+  const introTextContainer = document.getElementById("intro-text-container");
 
   introText.forEach((element, idx) => {
     setTimeout(() => {
