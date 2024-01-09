@@ -40,7 +40,7 @@ const internships = [
       skills.html,
       skills.css,
       skills.javascript,
-      skills.redux
+      skills.redux,
     ],
   },
   {
@@ -137,7 +137,7 @@ const projects = [
       skills.django,
       skills.python,
       skills.heroku,
-      skills.redux
+      skills.redux,
     ],
   },
   // {
@@ -168,7 +168,7 @@ const projects = [
       skills.python,
       skills.rest_api,
       skills.heroku,
-      skills.redux
+      skills.redux,
     ],
   },
   {
@@ -182,10 +182,7 @@ const projects = [
       "Displayed test scores and end of year report cards.",
       "Tracked student attendance.",
     ],
-    skills: [skills.react_native, skills.javascript, skills.php,
-    skills.redux
-
-    ],
+    skills: [skills.react_native, skills.javascript, skills.php, skills.redux],
   },
   {
     name: "Community",
@@ -205,8 +202,7 @@ const projects = [
       skills.rest_api,
       skills.javascript,
       skills.heroku,
-      skills.redux
-
+      skills.redux,
     ],
   },
   {
@@ -269,24 +265,37 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const introText = document.querySelectorAll(".intro-text");
-  const introTextContainer = document.getElementById("intro-text-container");
+  const introContainer = document.getElementById("intro-container");
+  const introTextContainer = document.querySelector(".intro-text-container");
+  const introImageContainer = document.querySelector(".intro-image-container");
+  const introImage = document.querySelector(".intro-image");
 
   introText.forEach((element, idx) => {
     setTimeout(() => {
       element.classList.add("active");
-      if (element.tagName === "DIV") {
-        func();
-      }
-    }, (idx + 1) * 700)
+    }, (idx + 1) * 800);
   });
 
   setTimeout(() => {
-    introContainer.style.top = "-100vh"
-  }, 2300)
+    introTextContainer.style.width = "inherit";
+  }, 1500);
 
+  setTimeout(() => {
+    introImageContainer.style.scale = 1;
+  }, 2000);
+
+  setTimeout(() => {
+    introContainer.style.height = "60vh";
+  }, 3000);
+
+  setTimeout(() => {
+    introImage.style.opacity = 1;
+  }, 3800);
+
+  setTimeout(() => func(), 5000);
 });
 
-async function typeSentence(sentence, eleRef, delay = 100) {
+async function typeSentence(sentence, eleRef, delay = 70) {
   const letters = sentence.split("");
   let i = 0;
   while (i < letters.length) {
