@@ -260,6 +260,8 @@ const leadership = [
 const carouselText = ["Software Developer", "Innovator", "Tutor", "Learner"];
 
 document.addEventListener("DOMContentLoaded", () => {
+  disableScroll();
+
   const func = async () => {
     carousel(carouselText, "#feature-text");
   };
@@ -292,7 +294,10 @@ document.addEventListener("DOMContentLoaded", () => {
     introImage.style.opacity = 1;
   }, 3800);
 
-  setTimeout(() => func(), 5000);
+  setTimeout(() => {
+    enableScroll();
+    func();
+  }, 5000);
 });
 
 async function typeSentence(sentence, eleRef, delay = 70) {
@@ -333,4 +338,48 @@ async function carousel(carouselList, eleRef) {
 
 function waitForMs(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Preventing Scroll Code
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+var supportsPassive = false;
+try {
+  window.addEventListener(
+    "test",
+    null,
+    Object.defineProperty({}, "passive", {
+      get: function () {
+        supportsPassive = true;
+      },
+    })
+  );
+} catch (e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent =
+  "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
+function disableScroll() {
+  window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
+  window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener("DOMMouseScroll", preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+  window.removeEventListener("touchmove", preventDefault, wheelOpt);
+  window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
 }
