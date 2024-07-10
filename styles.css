@@ -249,9 +249,9 @@ html {
 
 /* CUSTOM CSS */
 .internship-logo {
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  /* border-radius: 50%; */
 }
 
 .header {
@@ -401,4 +401,19 @@ html {
   box-shadow: 0.1rem 0.2rem 1rem lightgray;
   transform: translateY(0.1em);
   -webkit-transform: translateY(-0.4rem);
+}
+
+/* HR STYLING */
+.absolute-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white !important;
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+.header-container {
+  margin: 2.8rem 0rem;
 }

@@ -19,20 +19,48 @@ const skills = {
   flutter: "Flutter",
   heroku: "Heroku",
   redux: "React Redux",
+  flutter: "Flutter",
+  saas: "SaaS",
+  ocr: "OCR",
+  openai: "OpenAI API",
+  socketio: "SocketIO",
+  mongodb: "MongoDB",
 };
 
 const internships = [
   {
+    company: "Macs-G",
+    position: "Full Stack Web & Flutter Developer",
+    location: "Dubai, UAE",
+    timespan: "May 2024 - August 2024",
+    logo: "/images/macs-g.jpg",
+    description: [
+      "Upgraded the company's Aegis application's existing NodeJS + MySQL backend to support SaaS multi-tenant architecture.",
+      "Led development of a Construction Management software using Flutter + MySQL with room tracking via OCR while providing a seamless user experience for inspections and submitting reports.",
+      "Implemented an expense management admin dashboard (using React + Firebase) and client mobile application (using Flutter) utilizing OCR features and LLMs to process and extract data, automating the entire process and reducing time spent by 30% and reliability of data by 40%",
+    ],
+    skills: [
+      skills.flutter,
+      skills.react,
+      skills.redux,
+      skills.saas,
+      skills.javascript,
+      skills.html,
+      skills.css,
+      skills.ocr,
+    ],
+  },
+  {
     company: "EmQube LLC",
     position: "Software Tester & Mobile App Developer",
     location: "Dubai, UAE",
-    timespan: "June 2023 - July 2023",
+    timespan: "June 2023 - Aug 2023",
     logo: "/images/emqube.jpeg",
     description: [
       "Tested EmQube's in-development Facility Management Software called CAFM Pro.",
       "Suggested fixes for issues found.",
       "Developed a cross-platform mobile application using React Native. Integrated EmQube's backend and allowed users to create tickets for issues through the application.",
-      "Documented the UI for the CAFM Pro application",
+      "Documented the UI for the CAFM Pro application.",
     ],
     skills: [
       skills.react_native,
@@ -47,7 +75,7 @@ const internships = [
     company: "Triway Technologies",
     position: "Software Development Intern",
     location: "Dubai, UAE",
-    timespan: "July 2021 - July 2021",
+    timespan: "July 2021 - Aug 2021",
     description: [
       "Developed a full stack application that accepts user input, updates the database using API calls.",
       "Built frontend using Angular (TypeScript) and learnt about fetch requests and observable objects.",
@@ -67,7 +95,7 @@ const internships = [
     company: "Galaxkey",
     position: "Software Security Intern",
     location: "Dubai, UAE",
-    timespan: "July 2020 - July 2020",
+    timespan: "July 2020 - Aug 2020",
     logo: "/images/galaxkey.webp",
     description: [
       "Learnt about Software Security.",
@@ -95,6 +123,33 @@ const projects = [
       skills.python,
       skills.django,
       skills.rest_api,
+    ],
+  },
+  {
+    name: "Tournament Tracker",
+    type: "Web Application",
+    short_desc: "Inter-School Tournament Tracker",
+    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
+    long_desc: [
+      "<strong>Inspiration: </strong>My highschool kept no record of previous years tournament winners and there was no way for participants to track their performance across tournaments to show universities.",
+      "Integrated excel sheet processing so that coaches could enter an excel sheet with all participants and teams would be created automatically using given information.",
+      "Created an algorithm that randomizes tournament matches and creates a single elimination tournament.",
+      "Used our country's ID to track player performance and create portfolios for them.",
+      "Awarded points to each team based on match outcomes and calculated winner at the end of the tournament.",
+      "<a target=\"_blank\" href='https://tournament-web-app-zeta.vercel.app/'>Frontend URL</a>",
+      "<a target=\"_blank\" href='https://lakimapturn1.pythonanywhere.com/'>Backend URL</a> (username - visitor, password - admin)",
+      "<i>Note: The backend & frontend fall asleep when inactive and may take a few seconds to load.<i>",
+    ],
+    skills: [
+      skills.react,
+      skills.html,
+      skills.css,
+      skills.javascript,
+      skills.django,
+      skills.python,
+      skills.rest_api,
+      skills.heroku,
+      skills.redux,
     ],
   },
   {
@@ -147,30 +202,6 @@ const projects = [
   //   long_desc: [""],
   //   skills: [skills.react_native, skills.javascript],
   // },
-  {
-    name: "Tournament Tracker",
-    type: "Web Application",
-    short_desc: "Inter-School Tournament Tracker",
-    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
-    long_desc: [
-      "<strong>Inspiration: </strong>My highschool kept no record of previous years tournament winners and there was no way for participants to track their performance across tournaments to show universities.",
-      "Integrated excel sheet processing so that coaches could enter an excel sheet with all participants and teams would be created automatically using given information.",
-      "Created an algorithm that randomizes tournament matches and creates a single elimination tournament.",
-      "Used our country's ID to track player performance and create portfolios for them.",
-      "Awarded points to each team based on match outcomes and calculated winner at the end of the tournament.",
-    ],
-    skills: [
-      skills.react,
-      skills.html,
-      skills.css,
-      skills.javascript,
-      skills.django,
-      skills.python,
-      skills.rest_api,
-      skills.heroku,
-      skills.redux,
-    ],
-  },
   {
     name: "Elite English School Communicator Application",
     type: "Mobile Application",
@@ -240,65 +271,121 @@ const achievements = [
   },
 ];
 
-const leadership = [
+const leadershipActivities = [
   {
-    name: "Co-lead at GT Web Dev Club",
+    name: "GT WebDev",
+    position: "Vice President & Project Manager",
+    date: "September 2023 - Present",
+
     desc: [
-      "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
+      {
+        title: "FashionGPT",
+        details: [
+          "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
+          "Used React, NodeJS, OpenAI API, and MongoDB",
+        ],
+      },
+      {
+        title: "Dungeons & Dragons",
+        details: [
+          "Spearheaded development of an interactive and multiplayer web-based Dungeons & Dragons game using React + OpenAI API ",
+          "Enabled real-time multiplayer by creating live servers with WebSocket (SocketIO) and NodeJS",
+        ],
+      },
+    ],
+    skills: [
+      skills.react,
+      skills.javascript,
+      skills.nodejs,
+      skills.socketio,
+      skills.openai,
+      skills.mongodb,
     ],
   },
   {
-    name: "Founded Exponential Technologies Club at High School",
+    name: "iOS Club GT",
+    position: "Senior Developer",
+    date: "September 2023 - Present",
+    desc: [
+      {
+        title: "ThoughtBank",
+        details: [
+          "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
+        ],
+      },
+      {
+        title: "Polyplay",
+        details: [
+          "Developed an iOS mobile application that allows people to compete against friends while learning languages through interactive multiplayer mini-games and flashcards",
+          "Utilize technologies including SwiftUI, Xcode, Firebase, GameKit/MultipeerConnectivity and OpenAI API",
+        ],
+      },
+    ],
+    skills: [
+      skills.swift,
+      skills.xcode,
+      skills.firebase,
+      "GameKit",
+      "MultipeerConnectivity",
+      skills.openai,
+    ],
+  },
+  {
+    name: "Exponential Technologies Club",
+    position: "Founder & Mentor",
+    date: "August 2021 - March 2023",
     desc: [
       "Hosted workshops weekly to teach students about web development.",
       "Organized hackathons and collaborative projects where passionate students could work together to solve a problem and learn.",
     ],
+    skills: [skills.javascript, skills.html, skills.css],
   },
 ];
 
 // Typewriter code
 const carouselText = ["Software Developer", "Innovator", "Tutor", "Learner"];
 
-document.addEventListener("DOMContentLoaded", () => {
-  disableScroll();
+// document.addEventListener("DOMContentLoaded", () => {
+//   disableScroll();
+//   window.scrollTo(0, 0);
 
-  const func = async () => {
-    carousel(carouselText, "#feature-text");
-  };
+//   const func = async () => {
+//     carousel(carouselText, "#feature-text");
+//   };
 
-  const introText = document.querySelectorAll(".intro-text");
-  const introContainer = document.getElementById("intro-container");
-  const introTextContainer = document.querySelector(".intro-text-container");
-  const introImageContainer = document.querySelector(".intro-image-container");
-  const introImage = document.querySelector(".intro-image");
+//   const introText = document.querySelectorAll(".intro-text");
+//   const introContainer = document.getElementById("intro-container");
+//   const introTextContainer = document.querySelector(".intro-text-container");
+//   const introImageContainer = document.querySelector(".intro-image-container");
+//   const introImage = document.querySelector(".intro-image");
 
-  introText.forEach((element, idx) => {
-    setTimeout(() => {
-      element.classList.add("active");
-    }, (idx + 1) * 800);
-  });
+//   introText.forEach((element, idx) => {
+//     setTimeout(() => {
+//       element.classList.add("active");
+//     }, (idx + 1) * 800);
+//   });
 
-  setTimeout(() => {
-    introTextContainer.style.width = "inherit";
-  }, 1500);
+//   setTimeout(() => {
+//     introTextContainer.style.width = "inherit";
+//   }, 1500);
 
-  setTimeout(() => {
-    introImageContainer.style.scale = 1;
-  }, 2000);
+//   setTimeout(() => {
+//     introImageContainer.style.scale = 1;
+//   }, 2000);
 
-  setTimeout(() => {
-    introContainer.style.height = "60vh";
-  }, 3000);
+//   setTimeout(() => {
+//     introContainer.style.height = "60vh";
+//   }, 3000);
 
-  setTimeout(() => {
-    introImage.style.opacity = 1;
-  }, 3800);
+//   setTimeout(() => {
+//     introImage.style.opacity = 1;
+//   }, 3800);
 
-  setTimeout(() => {
-    enableScroll();
-    func();
-  }, 5000);
-});
+//   setTimeout(() => {
+//     enableScroll();
+//     func();
+//   }, 5000);
+// });
 
 async function typeSentence(sentence, eleRef, delay = 70) {
   const letters = sentence.split("");

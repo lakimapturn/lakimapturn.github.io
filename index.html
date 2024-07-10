@@ -46,9 +46,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#other-links">Other Links</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#leadership">Leadership & Activities</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -95,12 +95,17 @@
           </div>
         </section>
         <section id="about" class="pt-2 px-2">
-          <h1>About Me</h1>
+          <div class="position-relative w-100 p-0 header-container">
+            <div class="absolute-center bg-white">
+              <h1>About Me</h1>
+            </div>
+            <hr />
+          </div>
           <p class="card-text">
             I am a Georgia Tech Computer Science major who loves developing
             software and building innovative solutions to real world problems.
             My coding journey started when I first learnt Visual Basic in 2018.
-            Now, I have learnt over 5 programming languages and several more
+            Now, I have learnt over 8 programming languages and several more
             frameworks but am evermore eager to expand my knowledge within the
             vast field of Computer Science. Beyond learning, I also enjoy
             teaching as I was involved in several tutoring clubs in high school
@@ -111,7 +116,12 @@
       </section>
 
       <section id="workExperience">
-        <h1 class="px-2">Work Experience</h1>
+        <div class="position-relative w-100 p-0 header-container">
+          <div class="absolute-center bg-white">
+            <h1>Work Experience</h1>
+          </div>
+          <hr />
+        </div>
 
         <div class="container-fluid bg-dark p-0">
           <div class="timeline" id="internships"></div>
@@ -119,12 +129,33 @@
       </section>
 
       <section id="projects" class="mb-3">
-        <h1 class="px-2">Projects</h1>
+        <div class="position-relative w-100 p-0 header-container">
+          <div class="absolute-center bg-white">
+            <h1>Projects</h1>
+          </div>
+          <hr />
+        </div>
 
         <div
           id="projectList"
           class="row row-cols-2 justify-content-md-center"
         ></div>
+      </section>
+
+      <section id="leadership">
+        <div class="position-relative w-100 p-0 header-container">
+          <div class="absolute-center bg-white">
+            <h1>Leadership & Activities</h1>
+          </div>
+          <hr />
+        </div>
+
+        <div class="container-fluid bg-dark p-0">
+          <div
+            id="leadershipActivities"
+            class="row row-cols-2 justify-content-md-center"
+          ></div>
+        </div>
       </section>
 
       <!-- <section id="other-links">
@@ -292,6 +323,67 @@
       };
 
       ReactDOM.render(<Projects />, document.getElementById("projectList"));
+    </script>
+    <script type="text/babel">
+      const LeadershipActivities = (props) => {
+        return leadershipActivities.map((activity) => (
+          <div key={activity.name} className="col my-1 project-item">
+            <div data-bs-theme="light" className="card">
+              <div className="card-body">
+                {activity.name && (
+                  <div className="text-center">
+                    <h4 className="fw-bold">{activity.name}</h4>
+                    <p className="m-0">
+                      <i>{activity.position}</i>
+                    </p>
+                    <p className="leading">{activity.date}</p>
+                  </div>
+                )}
+                <br />
+                {activity.desc && (
+                  <ul>
+                    {activity.desc.map((item) => {
+                      return item.title ? (
+                        <li key={item.title} className="mb-3">
+                          {item.title}
+                          <ul>
+                            {item.details.map((subItem) => (
+                              <li
+                                key={subItem}
+                                dangerouslySetInnerHTML={{ __html: subItem }}
+                              />
+                            ))}
+                          </ul>
+                        </li>
+                      ) : (
+                        <li
+                          key={item}
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
+              <div className="card-footer d-flex flex-wrap">
+                {activity.skills.map((skill) => (
+                  <span
+                    key={Math.random().toString()}
+                    className="badge rounded-pill mx-1 my-1 bg-dark"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ));
+      };
+
+      ReactDOM.render(
+        <LeadershipActivities />,
+        document.getElementById("leadershipActivities")
+      );
     </script>
   </body>
 </html>
