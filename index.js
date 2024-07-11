@@ -346,8 +346,10 @@ const leadershipActivities = [
 const carouselText = ["Software Developer", "Innovator", "Tutor", "Learner"];
 
 document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 10);
   disableScroll();
-  window.scrollTo(0, 0);
 
   const func = async () => {
     carousel(carouselText, "#feature-text");
