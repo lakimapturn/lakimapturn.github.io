@@ -345,47 +345,47 @@ const leadershipActivities = [
 // Typewriter code
 const carouselText = ["Software Developer", "Innovator", "Tutor", "Learner"];
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   disableScroll();
-//   window.scrollTo(0, 0);
+document.addEventListener("DOMContentLoaded", () => {
+  disableScroll();
+  window.scrollTo(0, 0);
 
-//   const func = async () => {
-//     carousel(carouselText, "#feature-text");
-//   };
+  const func = async () => {
+    carousel(carouselText, "#feature-text");
+  };
 
-//   const introText = document.querySelectorAll(".intro-text");
-//   const introContainer = document.getElementById("intro-container");
-//   const introTextContainer = document.querySelector(".intro-text-container");
-//   const introImageContainer = document.querySelector(".intro-image-container");
-//   const introImage = document.querySelector(".intro-image");
+  const introText = document.querySelectorAll(".intro-text");
+  const introContainer = document.getElementById("intro-container");
+  const introTextContainer = document.querySelector(".intro-text-container");
+  const introImageContainer = document.querySelector(".intro-image-container");
+  const introImage = document.querySelector(".intro-image");
 
-//   introText.forEach((element, idx) => {
-//     setTimeout(() => {
-//       element.classList.add("active");
-//     }, (idx + 1) * 800);
-//   });
+  introText.forEach((element, idx) => {
+    setTimeout(() => {
+      element.classList.add("active");
+    }, (idx + 1) * 800);
+  });
 
-//   setTimeout(() => {
-//     introTextContainer.style.width = "inherit";
-//   }, 1500);
+  setTimeout(() => {
+    introTextContainer.style.width = "inherit";
+  }, 1500);
 
-//   setTimeout(() => {
-//     introImageContainer.style.scale = 1;
-//   }, 2000);
+  setTimeout(() => {
+    introImageContainer.style.scale = 1;
+  }, 2000);
 
-//   setTimeout(() => {
-//     introContainer.style.height = "60vh";
-//   }, 3000);
+  setTimeout(() => {
+    introContainer.style.height = "60vh";
+  }, 3000);
 
-//   setTimeout(() => {
-//     introImage.style.opacity = 1;
-//   }, 3800);
+  setTimeout(() => {
+    introImage.style.opacity = 1;
+  }, 3800);
 
-//   setTimeout(() => {
-//     enableScroll();
-//     func();
-//   }, 5000);
-// });
+  setTimeout(() => {
+    enableScroll();
+    func();
+  }, 5000);
+});
 
 async function typeSentence(sentence, eleRef, delay = 70) {
   const letters = sentence.split("");

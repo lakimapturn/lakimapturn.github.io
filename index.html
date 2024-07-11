@@ -17,8 +17,8 @@
       data-bs-theme="dark"
       id="portfolio-navbar"
     >
-      <div class="container mx-auto">
-        <div class="container-fluid inner-navbar">
+      <div class="container-fluid mx-auto w-100">
+        <div class="inner-navbar collapsed-style">
           <h5 class="navbar-brand my-auto">Laksh Makhija</h5>
           <button
             class="navbar-toggler"
@@ -33,10 +33,10 @@
           </button>
         </div>
         <div
-          class="collapse navbar-collapse offcanvas-header text-nowrap"
+          class="collapse navbar-collapse offcanvas-header w-100 text-nowrap"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
               <a class="nav-link" href="#about">About Me</a>
             </li>
@@ -50,6 +50,44 @@
               <a class="nav-link" href="#leadership">Leadership & Activities</a>
             </li>
           </ul>
+          <div class="d-flex text-end">
+            <div
+              class="hoverable-card rounded-circle bg-white mx-2"
+              style="height: 2em; width: 2em"
+            >
+              <a target="_blank" href="https://github.com/lakimapturn">
+                <img
+                  src="./images/github-logo.png"
+                  alt="GitHub"
+                  class="icon"
+                  style="height: 2em; width: 2em"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="GitHub"
+                />
+              </a>
+            </div>
+
+            <div
+              class="hoverable-card bg-white rounded mx-2"
+              style="height: 2em; width: 2em"
+            >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/laksh-makhija/"
+              >
+                <img
+                  src="./images/linkedin-logo.png"
+                  alt="LinkedIn"
+                  class="icon"
+                  style="height: 2em; width: 2em"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="LinkedIn"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

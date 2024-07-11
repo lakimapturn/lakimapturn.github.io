@@ -417,3 +417,11 @@ html {
 .header-container {
   margin: 2.8rem 0rem;
 }
+
+/* NAVBAR STYLING */
+@media (max-width: 768px) {
+  .collapsed-style {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
