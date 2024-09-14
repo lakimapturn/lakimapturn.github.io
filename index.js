@@ -35,9 +35,9 @@ const internships = [
     timespan: "May 2024 - August 2024",
     logo: "/images/macs-g.jpg",
     description: [
-      "Upgraded the company's Aegis application's existing NodeJS + MySQL backend to support SaaS multi-tenant architecture.",
-      "Led development of a Construction Management software using Flutter + MySQL with room tracking via OCR while providing a seamless user experience for inspections and submitting reports.",
-      "Implemented an expense management admin dashboard (using React + Firebase) and client mobile application (using Flutter) utilizing OCR features and LLMs to process and extract data, automating the entire process and reducing time spent by 30% and reliability of data by 40%",
+      "Integrated a SaaS multi-tenant architecture into an existing NodeJS + MySQL backend improving querying time by 35% and strengthening data security by 53%.",
+      "Led development of a Construction Management software using Flutter + MySQL with room tracking via OCR and providing a seamless user experience for inspections and submitting reports.",
+      "Implemented a Full Stack expense management client and admin application utilizing cloud storage, OCR features, and LLMs to process and extract data enabling automation thus reducing time spent by 32% and preventing misuse by 40%",
     ],
     skills: [
       skills.flutter,
@@ -59,7 +59,7 @@ const internships = [
     description: [
       "Tested EmQube's in-development Facility Management Software called CAFM Pro.",
       "Suggested fixes for issues found.",
-      "Developed a cross-platform mobile application using React Native. Integrated EmQube's backend and allowed users to create tickets for issues through the application.",
+      "Developed a React Native cross-platform mobile application to offer on-demand services, enhancing the accessibility of the existing system by adding a mobile client alongside the server and web clients, resulting in a 20% increase in facility management companies' satisfaction and willingness to adopt the product",
       "Documented the UI for the CAFM Pro application.",
     ],
     skills: [
@@ -132,6 +132,7 @@ const projects = [
     url: "https://www.youtube.com/embed/KXrW5_j8mBI",
     long_desc: [
       "<strong>Inspiration: </strong>My highschool kept no record of previous years tournament winners and there was no way for participants to track their performance across tournaments to show universities.",
+      "Developed a full stack web application using React, Django, and SQL to track inter-school racquet sport tournaments.",
       "Integrated excel sheet processing so that coaches could enter an excel sheet with all participants and teams would be created automatically using given information.",
       "Created an algorithm that randomizes tournament matches and creates a single elimination tournament.",
       "Used our country's ID to track player performance and create portfolios for them.",
@@ -161,8 +162,10 @@ const projects = [
       "Safeguarding Juniors by Spreading Awareness on Staying Safe On The Internet Post-Covid",
     long_desc: [
       "<strong>Inspiration: </strong>During Covid, the entire world began relying on the internet for daily activities. This audience included young children who don't know any better. This website aimed at educating them and helping them stay safe online.",
+      "Collaborated with the Dubai Police to develop a web application using HTML, CSS, and Django to educate students (Gr 3-8) on digital safety through games and modules.",
       "Used games and modules to educate students on various topics such as Digital Safety, Digital Identity, Dealing With Inappropriate Content Online, etc.",
-      "Taylored content for students of different ages.",
+      "Tailored content for students of different ages.",
+      "Impacted over 1500 users with an 80% improvement rate observed through pre and post surveys",
     ],
     skills: [
       skills.python,
@@ -209,9 +212,12 @@ const projects = [
     short_desc:
       "iOS Application To Strengthen Communication Between Parents and School Staff.",
     long_desc: [
+      "Championed development of an iOS app using React Native to enhance communication between students, parents, and the school while facilitating convenient access to student data.",
       "Allows parents to view outstanding fee amounts, upcoming school events, subject specific conversations and circulars.",
       "Displayed test scores and end of year report cards.",
       "Tracked student attendance.",
+      "Built an API using PHP to enable data flow between the legacy SQLite database and the mobile application",
+      "Improved information exchange between school and 3000+ students by 63%.",
     ],
     skills: [skills.react_native, skills.javascript, skills.php, skills.redux],
   },
@@ -273,23 +279,39 @@ const achievements = [
 
 const leadershipActivities = [
   {
+    name: "Georgia Tech College of Computing",
+    position: "Discrete Mathematics Teaching Assistant",
+    date: "August 2024 - Present",
+    desc: [
+      "Tutored students in topics such as Propositional Logic, Cryptography, and Algorithms (like Greedy, Recursive, Brute Force)",
+      "Hosted weekly office hours, responded to discussion boards and questions, and provided feedback on student assignments",
+    ],
+    skills: ["Algorithms", "Teaching", "Discrete Mathematics"],
+  },
+  {
     name: "GT WebDev",
     position: "Vice President & Project Manager",
-    date: "September 2023 - Present",
-
+    date: "August 2023 - Present",
     desc: [
       {
-        title: "FashionGPT",
+        title: "FinSimIQ",
         details: [
-          "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
-          "Used React, NodeJS, OpenAI API, and MongoDB",
+          "Led the development of FinSimIQ, a gamified platform that teaches finance and stock market concepts through interactive quizzes and real-world stock simulations",
+          "Facilitated personalized learning experiences by creating dynamic quizzes with React.js and Finance APIs for real-time data.",
         ],
       },
       {
         title: "Dungeons & Dragons",
         details: [
-          "Spearheaded development of an interactive and multiplayer web-based Dungeons & Dragons game using React + OpenAI API ",
-          "Enabled real-time multiplayer by creating live servers with WebSocket (SocketIO) and NodeJS",
+          "Spearheaded development of an interactive and multiplayer web-based Dungeons & Dragons game using React + OpenAI API.",
+          "Enabled real-time multiplayer by creating live servers with WebSocket (SocketIO) and NodeJS.",
+        ],
+      },
+      {
+        title: "FashionGPT",
+        details: [
+          "Co-led the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
+          "Used React, NodeJS, OpenAI API, and MongoDB",
         ],
       },
     ],
@@ -305,19 +327,21 @@ const leadershipActivities = [
   {
     name: "iOS Club GT",
     position: "Senior Developer",
-    date: "September 2023 - Present",
+    date: "August 2023 - Present",
     desc: [
-      {
-        title: "ThoughtBank",
-        details: [
-          "Co leading the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
-        ],
-      },
       {
         title: "Polyplay",
         details: [
           "Developed an iOS mobile application that allows people to compete against friends while learning languages through interactive multiplayer mini-games and flashcards",
           "Utilize technologies including SwiftUI, Xcode, Firebase, GameKit/MultipeerConnectivity and OpenAI API",
+        ],
+      },
+      {
+        title: "ThoughtBank",
+        details: [
+          "Developed an iOS mobile application that took a new innovative approach to social media.",
+          "Allowed users to make friends and share their thoughts with each other at different times of the day, sort of like a combination between Twitter and BeReal.",
+          "Utilized technologies including SwiftUI, Xcode, and Firebase",
         ],
       },
     ],
