@@ -19,15 +19,43 @@ const skills = {
   flutter: "Flutter",
   heroku: "Heroku",
   redux: "React Redux",
-  flutter: "Flutter",
   saas: "SaaS",
   ocr: "OCR",
   openai: "OpenAI API",
   socketio: "SocketIO",
   mongodb: "MongoDB",
+  hack: "Hack",
+  ent: "Ent",
+  graphql: "GraphQL",
+  orm: "ORMs",
+  llm: "LLM",
+  vscode_extension: "VS Code Extension",
+  chrome_extension: "Chrome Extension",
 };
 
 const internships = [
+  {
+    company: "Meta",
+    position: "Software Engineer Intern",
+    location: "Menlo Park, CA",
+    timespan: "May 2025 - August 2025",
+    logo: "/images/meta.png",
+    description: [
+      "Revamped the debugging pipeline for Meta's business insight generation model, reducing redundant business recommendations by 15% and contributing to a ~$22.5M revenue increase",
+      "Enhanced filtering of model outputs by addressing edge cases and refining delivery logic, resulting in a 40% increase in insight delivery accuracy and higher engagement from businesses using Meta's business platforms",
+      "Collaborated cross-functionally within the Monetization organization to enhance personalized recommendations, supporting thousands of businesses in acquiring customers more effectively through data-driven insights",
+    ],
+    skills: [
+      skills.hack,
+      skills.react,
+      skills.javascript,
+      skills.orm,
+      skills.ent,
+      skills.graphql,
+      skills.html,
+      skills.css,
+    ],
+  },
   {
     company: "Macs-G",
     position: "Full Stack Web & Flutter Developer",
@@ -48,6 +76,8 @@ const internships = [
       skills.html,
       skills.css,
       skills.ocr,
+      skills.llm,
+      skills.python,
     ],
   },
   {
@@ -107,6 +137,41 @@ const internships = [
 
 const projects = [
   {
+    name: "CS2200 Assembly IntelliSense",
+    type: "VS Code Extension",
+    short_desc:
+      "A Lightweight VS Code Extension Providing IntelliSense Support for LC2200 Assembly Language",
+    long_desc: [
+      "<strong>Inspiration: </strong>Built to help Georgia Tech students in CS 2200 (Systems & Networks) by providing development tools for LC2200 assembly programming.",
+      "Implemented autocomplete suggestions for all LC2200 assembly instructions (add, lea, jalr, etc.) with inline documentation showing operand formats and usage.",
+      "Added syntax highlighting for .s and .asm files with real-time error detection for register names and undefined labels.",
+      "Created label checking functionality for beq, lea, and jmp instructions to catch common assembly errors.",
+      "Enabled custom ISA file selection allowing students to use different instruction sets for various assignments.",
+      "<a target=\"_blank\" href='https://github.com/lakimapturn/cs2200-asm-intellisense'>View on GitHub</a>",
+    ],
+    skills: [skills.javascript, skills.vscode_extension],
+  },
+  {
+    name: "cblol (Custom Bunnylol)",
+    type: "Chrome Extension",
+    short_desc:
+      "An Open-Source Chrome Extension for Custom URL Shortcuts Inspired by Meta's Bunnylol",
+    long_desc: [
+      "<strong>Inspiration: </strong>Inspired by Meta's internal Bunnylol tool, built an open-source alternative that prioritizes user privacy.",
+      "Enables quick navigation using custom shortcuts directly from Chrome's Omnibox by typing '!' followed by a shortcut.",
+      "Supports dynamic search queries with %s placeholder substitution for flexible URL navigation.",
+      "Preloaded with popular shortcuts (Google, GitHub, Reddit, Gmail, etc.) while allowing full customization through the extension settings.",
+      "Built with a focus on privacy - fully open source so users can verify no data is being collected.",
+      "<a target=\"_blank\" href='https://github.com/lakimapturn/cblol'>View on GitHub</a>",
+    ],
+    skills: [
+      skills.javascript,
+      skills.html,
+      skills.css,
+      skills.chrome_extension,
+    ],
+  },
+  {
     name: "Eco Trek",
     type: "Mobile Application",
     short_desc:
@@ -129,7 +194,7 @@ const projects = [
     name: "Tournament Tracker",
     type: "Web Application",
     short_desc: "Inter-School Tournament Tracker",
-    url: "https://www.youtube.com/embed/KXrW5_j8mBI",
+    image: "/images/tournament-tracker.png",
     long_desc: [
       "<strong>Inspiration: </strong>My highschool kept no record of previous years tournament winners and there was no way for participants to track their performance across tournaments to show universities.",
       "Developed a full stack web application using React, Django, and SQL to track inter-school racquet sport tournaments.",
