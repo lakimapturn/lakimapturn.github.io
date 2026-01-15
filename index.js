@@ -5,7 +5,7 @@ const skills = {
   java: "Java",
   javascript: "JavaScript",
   python: "Python",
-  rest_api: "Rest API",
+  rest_api: "REST API",
   lua: "Lua",
   love2d: "LOVE 2D",
   php: "PHP",
@@ -31,6 +31,26 @@ const skills = {
   llm: "LLM",
   vscode_extension: "VS Code Extension",
   chrome_extension: "Chrome Extension",
+  nodejs: "NodeJS",
+  swift: "SwiftUI",
+  xcode: "Xcode",
+  firebase: "Firebase",
+  c: "C",
+  assembly: "Assembly",
+  rust: "Rust",
+  cpp: "C++",
+  docker: "Docker",
+  tensorflow: "TensorFlow",
+  pytorch: "PyTorch",
+  azure: "Azure",
+  postgresql: "PostgreSQL",
+  dart: "Dart",
+  nosql: "noSQL",
+  mysql: "MySQL",
+  git: "Git",
+  pthreads: "pthreads",
+  networking: "TCP/IP & Networking",
+  iot: "IoT",
 };
 
 const internships = [
@@ -136,6 +156,48 @@ const internships = [
 ];
 
 const projects = [
+  {
+    name: "Smart Energy Anomaly Detection",
+    type: "IoT & Machine Learning",
+    short_desc:
+      "AI-Powered IoT System for Optimizing Energy Usage at Georgia Tech's Kendeda Building",
+    long_desc: [
+      "Built an AI-powered IoT system for Georgia Tech's Kendeda Building to optimize energy usage by analyzing over 10M readings from 50+ sensors.",
+      "Integrated weather and occupancy data to detect anomalies using Z-score & Isolation Forest algorithms.",
+      "Developed an API-driven dashboard for real-time anomaly visualization and root-cause analysis.",
+      "Reduced manual inspection time by 65% and achieved 92% detection precision, aiding campus-wide sustainability reporting.",
+    ],
+    skills: [
+      skills.python,
+      skills.ml,
+      skills.tensorflow,
+      skills.pytorch,
+      skills.iot,
+      skills.rest_api,
+      skills.sql,
+    ],
+  },
+  {
+    name: "Knowledge Graph Pruning",
+    type: "Machine Learning Research",
+    short_desc:
+      "ML-Driven Approach to Reduce Large-Scale Knowledge Graphs While Preserving Semantic Integrity",
+    long_desc: [
+      "Developed multiple ML approaches (KMeans, DBSCAN, XGBoost, SetFit) to prune Wikidata5m—a knowledge graph with 4.6M entities and 20M+ triples—for topic-specific subgraph extraction.",
+      "Implemented DBSCAN clustering pipeline achieving 93.5% seed coverage and 60% efficiency retention, enabling identification of semantically coherent subtopics.",
+      "Used Sentence Transformers (BAAI/bge-large-en-v1.5) for 1024-dimensional embeddings with PCA and UMAP for dimensionality reduction.",
+      "Evaluated models using custom metrics including Seed Coverage, Coherence (Gensim Cv), Efficiency Retention, and Compression Rate.",
+    ],
+    skills: [
+      skills.python,
+      skills.ml,
+      "DBSCAN",
+      "KMeans",
+      "XGBoost",
+      "Sentence Transformers",
+      "PCA/UMAP",
+    ],
+  },
   {
     name: "CS2200 Assembly IntelliSense",
     type: "VS Code Extension",
@@ -345,38 +407,64 @@ const achievements = [
 const leadershipActivities = [
   {
     name: "Georgia Tech College of Computing",
-    position: "Discrete Mathematics Teaching Assistant",
-    date: "August 2024 - Present",
+    position: "Systems & Networks Teaching Assistant",
+    date: "August 2025 - Present",
     desc: [
-      "Tutored students in topics such as Propositional Logic, Cryptography, and Algorithms (like Greedy, Recursive, Brute Force)",
-      "Hosted weekly office hours, responded to discussion boards and questions, and provided feedback on student assignments",
+      "Tutor students in Computer Architecture (RISC vs CISC), Assembly, Memory Hierarchy, Operating Systems, C Programming, Caching, Multithreading (pthreads), and Networking (TCP/IP, Ethernet, Routing).",
+      "Host weekly office hours, provide feedback on student assignments, and lead lab sessions with 50+ students.",
+    ],
+    skills: [
+      skills.c,
+      skills.assembly,
+      "Computer Architecture",
+      "Operating Systems",
+      skills.pthreads,
+      skills.networking,
+    ],
+  },
+  {
+    name: "Georgia Tech College of Computing",
+    position: "Discrete Mathematics Teaching Assistant",
+    date: "August 2024 - May 2025",
+    desc: [
+      "Tutored students in topics such as Propositional Logic, Cryptography, and Algorithms (Greedy, Recursive, Brute Force).",
+      "Hosted weekly office hours, responded to discussion boards and questions, and provided feedback on student assignments.",
     ],
     skills: ["Algorithms", "Teaching", "Discrete Mathematics"],
   },
   {
+    name: "Georgia Tech Vertically Integrated Program",
+    position: "Researcher",
+    date: "January 2025 - Present",
+    desc: [
+      "Design and implement a shared Memory Management Unit in Rust to enable secure communication protocols between the high-security and low-security processors.",
+      "Ensuring the security and integrity of the voting machine through robust memory isolation and access control.",
+    ],
+    skills: [skills.rust, "Memory Management", "Security", "Embedded Systems"],
+  },
+  {
     name: "GT WebDev",
-    position: "Vice President & Project Manager",
+    position: "President & Project Manager",
     date: "August 2023 - Present",
     desc: [
       {
-        title: "FinSimIQ",
-        details: [
-          "Led the development of FinSimIQ, a gamified platform that teaches finance and stock market concepts through interactive quizzes and real-world stock simulations",
-          "Facilitated personalized learning experiences by creating dynamic quizzes with React.js and Finance APIs for real-time data.",
-        ],
-      },
-      {
         title: "Dungeons & Dragons",
         details: [
-          "Spearheaded development of an interactive and multiplayer web-based Dungeons & Dragons game using React + OpenAI API.",
+          "Spearheaded development of a multiplayer web-based Dungeons & Dragons game using React and LLMs to allow dynamic role selection along with story and decisions generation.",
           "Enabled real-time multiplayer by creating live servers with WebSocket (SocketIO) and NodeJS.",
         ],
       },
       {
-        title: "FashionGPT",
+        title: "MERN Stack Bootcamp",
         details: [
-          "Co-led the project Fashion GPT: a full stack web application that harnesses AI to suggest clothing to users based on their input",
-          "Used React, NodeJS, OpenAI API, and MongoDB",
+          "Led a hands-on bootcamp covering the MERN stack, guiding participants through building and deploying a full-stack application.",
+        ],
+      },
+      {
+        title: "FinSimIQ",
+        details: [
+          "Led the development of FinSimIQ, a gamified platform that teaches finance and stock market concepts through interactive quizzes and real-world stock simulations.",
+          "Facilitated personalized learning experiences by creating dynamic quizzes with React.js and Finance APIs for real-time data.",
         ],
       },
     ],
@@ -387,12 +475,13 @@ const leadershipActivities = [
       skills.socketio,
       skills.openai,
       skills.mongodb,
+      skills.llm,
     ],
   },
   {
     name: "iOS Club GT",
     position: "Senior Developer",
-    date: "August 2023 - Present",
+    date: "August 2023 - May 2024",
     desc: [
       {
         title: "Polyplay",
@@ -450,32 +539,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const introImageContainer = document.querySelector(".intro-image-container");
   const introImage = document.querySelector(".intro-image");
 
-  introText.forEach((element, idx) => {
-    setTimeout(() => {
-      element.classList.add("active");
-    }, (idx + 1) * 800);
-  });
-
+  // Faster, smoother animation sequence
+  // Step 1: "Hi," appears almost immediately
   setTimeout(() => {
+    introText[0]?.classList.add("active");
+  }, 100);
+
+  // Step 2: "I am Laksh Makhija" appears shortly after
+  setTimeout(() => {
+    introText[1]?.classList.add("active");
+    introText[2]?.classList.add("active"); // Make typing container visible
     introTextContainer.style.width = "inherit";
-  }, 1500);
+  }, 500);
 
+  // Step 3: Image scales in
   setTimeout(() => {
-    introImageContainer.style.scale = 1;
-  }, 2000);
-
-  setTimeout(() => {
-    introContainer.style.height = "60vh";
-  }, 3000);
-
-  setTimeout(() => {
+    introImageContainer.style.scale = 0.9;
     introImage.style.opacity = 1;
-  }, 3800);
+  }, 1000);
 
+  // Step 4: Smooth zoom-out effect
   setTimeout(() => {
+    introContainer.style.transform = "scale(0.95)";
+    introContainer.style.height = "60vh";
+  }, 1800);
+
+  // Step 5: Enable scroll and start typewriter
+  setTimeout(() => {
+    introContainer.style.transform = "scale(1)";
     enableScroll();
     func();
-  }, 5000);
+  }, 2500);
 });
 
 async function typeSentence(sentence, eleRef, delay = 70) {
